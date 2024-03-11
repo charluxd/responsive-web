@@ -1,14 +1,43 @@
+:root {
+  --primary-color-1: #54478f;
+  --primary-color-2: #272142;
+  --font-color-dark-1: #0a0911;
+  --font-color-dark-2: #44434a;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200 to 800;
   font-style: normal;
   font-variation-settings: "wdth" 100, "YTLC" 500;
+  color: var(--font-color-dark-2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--font-color-dark-1);
 }
 
 h1 {
-  font-size: 64px;
-  font-family: "Nunito", sans-serif;
+  font-size: 56px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 20px;
+  padding: 16px 0 12px 0;
+  margin: 0;
 }
 
 .hero {
@@ -18,7 +47,12 @@ h1 {
 .recipe-list,
 .contact,
 .about {
-  margin: 74px 80px 0 40px;
+  margin: 40px 240px;
+}
+
+.contact-info div {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-brand img {
@@ -31,7 +65,9 @@ button.navbar-toggler {
 }
 
 .hero img {
+  border-radius: 0;
   max-height: 280px;
+
   width: 100vw;
   overflow: hidden;
 }
@@ -41,6 +77,14 @@ button.navbar-toggler {
   text-align: center;
   margin-top: -200px;
   color: #fff;
+}
+
+.hero-content h1 {
+  color: #fff;
+}
+img {
+  border-radius: 16px;
+  padding: 0;
 }
 
 .home-recipe {
@@ -54,21 +98,22 @@ button.navbar-toggler {
   margin: 120px 160px 80px 160px;
 }
 
-.recipe img {
-  border-radius: 16px;
+.about {
+  align-items: center;
+  margin: 40px auto;
 }
 
-.recipe p {
-  margin: 16px 0;
+.follow-me {
+  align-items: center;
 }
 
+.fav-recipe {
+  margin: 40px auto;
+}
 .fa-brands {
+  width: 24px;
   margin: 8px;
-  color: #212529;
-}
-
-footer {
-  margin: auto 0 0 0;
+  color: var(--primary-color-2);
 }
 
 @media (max-width: 1200px) {
