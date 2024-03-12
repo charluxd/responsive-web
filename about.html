@@ -26,43 +26,49 @@
     <title>About</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.svg" alt="brand-logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="recipe.html">Recipe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="brand-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipe.html">Recipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="page-title mx-5 my-4">
+      </nav>
+    </header>
+
+    <section class="page-title">
       <h1>About</h1>
-    </div>
+    </section>
+
     <section class="about">
       <div class="container">
         <div class="row">
@@ -71,15 +77,18 @@
           </div>
           <div class="col-md-6">
             <h2>The Connoisseur Collection</h2>
-            <p>
+            <p class="my-2">
               Fromage squirty cheese babybel. Goat squirty cheese edam stilton
               cheese triangles caerphilly st. agur blue cheese halloumi. Cheese
               on toast taleggio emmental bavarian bergkase manchego macaroni
-              cheese cut the cheese rubber cheese. Babybel. Swiss brie fromage
-              frais. Emmental cow swiss jarlsberg pepper jack who moved my
-              cheese cheese and wine cheesy feet. Stilton cauliflower cheese
-              airedale fromage frais cheese and biscuits gouda cheese on toast
-              halloumi. Monterey jack cheese strings chalk and cheese paneer.
+              cheese cut the cheese rubber cheese.
+            </p>
+            <p class="my-2">
+              Babybel. Swiss brie fromage frais. Emmental cow swiss jarlsberg
+              pepper jack who moved my cheese cheese and wine cheesy feet.
+              Stilton cauliflower cheese airedale fromage frais cheese and
+              biscuits gouda cheese on toast halloumi. Monterey jack cheese
+              strings chalk and cheese paneer.
             </p>
 
             <div class="follow-me">
@@ -107,14 +116,14 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <div class="about-img">
+            <div class="fav-recipe-img">
               <img
                 src="images/about-recipe_1.png"
                 class="img-fluid"
                 alt="about-recipe"
               />
             </div>
-            <div class="about-title"><h4>Wet Vegetable Spring Rolls</h4></div>
+            <div class="about-title"><h4>Tropical Fruit Salad</h4></div>
             <div class="about-content">
               <p>
                 Blue castello camembert de normandie roquefort. Mascarpone when
@@ -124,14 +133,14 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="about-img">
+            <div class="fav-recipe-img">
               <img
                 src="images/about-recipe_2.png"
                 class="img-fluid"
                 alt="about-recipe"
               />
             </div>
-            <div class="about-title"><h4>Wet Vegetable Spring Rolls</h4></div>
+            <div class="about-title"><h4>Mediterranean Delight</h4></div>
             <div class="about-content">
               <p>
                 Cheesy grin cream cheese edam ricotta queso brie mascarpone when
@@ -141,14 +150,14 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="about-img">
+            <div class="fav-recipe-img">
               <img
                 src="images/about-recipe_3.png"
                 class="img-fluid"
                 alt="about-recipe"
               />
             </div>
-            <div class="about-title"><h4>Wet Vegetable Spring Rolls</h4></div>
+            <div class="about-title"><h4>Dutch Baby Pancake</h4></div>
             <div class="about-content">
               <p>
                 Paneer airedale fromage croque monsieur monterey jack red
@@ -164,7 +173,7 @@
     <footer>
       <nav class="navbar sticky-bottom bg-body-tertiary">
         <div class="container-fluid">
-          <span>
+          <span class="footer-brand">
             <a class="navbar-brand px-5" href="#">The Connoisseur Collection</a>
           </span>
           <span class="social-media px-5">
